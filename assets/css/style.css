@@ -5,9 +5,8 @@
 }
 
 .jumbotron {
-    /* background-color: rgb(234, 0, 255); */
+    background-color: rgb(174, 0, 255);
     color: white;
-    background-image: url("images/rainbow-back.png");
 }
 .card {
    background-color: rgba(0, 119, 255, 0.932);

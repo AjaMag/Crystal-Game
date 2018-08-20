@@ -17,7 +17,7 @@ var images = ["images/blueCrystal.png", "images/multiCrystal.jpg",
 			crystal.attr("src", images[i]);
             crystal.attr("value", (Math.floor(Math.random() * 20) + 1));
             crystal.attr("height", "125px");
-            crystal.attr("padding", "15px");
+            crystal.attr("padding", "10px");
 			$(".crystal-images").append(crystal);
         }
     }
