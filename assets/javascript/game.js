@@ -40,7 +40,7 @@ $(document).ready(function() {
     // };
     // function resetStats()
 
-    function clickCrystal(_event) {
+    function clickCrystal(event) {
         currentScore += $('.crystal').attr(val);
         $(".yourScore").text(currentScore);  
     }
