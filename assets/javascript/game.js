@@ -11,25 +11,17 @@ var crystal = {};
         targetNum = Math.floor(Math.random() * 80) + 1;
     }
      
-    function randCrysVal() {
-        for (var i = 0; i < images.length; i++) {
-            value = crystal.attr("value", Math.floor(Math.random() * 15) + 1);
-        }
-    }
-
     function resetCrystals () {
 		for (var i = 0; i < images.length; i++) {
             var crystal = $("<img>");
-            
+            crystal.attr("value", Math.floor(Math.random() * 15) + 1);
             crystal.attr("src", images[i]);
             crystal.attr("height", "125px");
             crystal.attr("padding", "10px");
-
             $(".crystal-images").append(crystal);               
         }
     }
-    // <img id="1" class="crystal" data-crystal=${Math.floor(Math.random() * 20) + 1}
-    //     src="">  
+ 
     function resetStats() {
         randomTargetNum();
         console
@@ -47,20 +39,10 @@ var crystal = {};
 
     // function resetPlay(){
     // $(".crystal-images").empty()     
-  
-    // }
 
-    // $('.crystal').on("click", function () {
-    //     let crystalValue = $(this).attr('data-crystal')
-    //     total += parseInt(crystalValue)
-    //     $('.total').text(total)
-    //     setTimeout(function () {
-    //         gameStatus()
-
-        function clickCrystal() { 
-            
-        //     currentScore += parseInt($(this).attr("value"));
-        //     $(".yourScore").text(currentScore)  
+        function clickCrystal() {    
+        currentScore += parseInt($(this).attr("value"));
+        $(".yourScore").text(currentScore)  
          }
 
         
