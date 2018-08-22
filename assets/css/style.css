@@ -4,6 +4,10 @@
     font-family: 'Stalinist One', cursive;
 }
 
+.row{
+    display: flex;
+}
+
 .jumbotron {
     background-color: rgb(174, 0, 255);
     color: white;
