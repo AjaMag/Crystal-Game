@@ -4,7 +4,6 @@ var currentScore = 0;
 var targetNum = "";
 var images = ["images/blueCrystal.png", "images/multiCrystal.jpg", 
 "images/orangeCrystal.png", "images/redCrystal.jpg"];
-var crystal = {};
 
     function randomTargetNum () {
         targetNum = Math.floor(Math.random() * 90);
@@ -13,16 +12,18 @@ var crystal = {};
     function resetCrystals () {
 		for (var i = 0; i < images.length; i++) {
             crystal = $("<img>");
-            crystal.attr("data-crys", Math.floor(Math.random() * 15));
+            crystal.attr("data-crys", Math.floor(Math.random() * 12));
             crystal.attr("src", images[i]);
             crystal.attr("height", "125px");
             crystal.attr("padding", "10px");
+            crystal.attr("id", [i]);
             crystal.addClass("crystal");
-            $(".crystal-images").append(crystal);               
+            $(".crystal-images").append(crystal);
+            $('#hidden').text(crystal.attr("data-crys"))               
         }
     }
- 
-    function resetStats() {
+
+    function resetStats() { 
         randomTargetNum ()
         $(".targetNum").text(`Target Number:${targetNum}`)
         currentScore = 0
@@ -33,12 +34,11 @@ var crystal = {};
     resetCrystals();
     resetStats();
 
-     
-    $('.crystal').on('click', function () {
-    currentScore += parseInt($(this).attr("data-crys")); 
-    console.log(this)
-    })
-    //$(".yourScore").text(`Your Score: ${currentScore}`)  
+        // $(crystal).on('click', function () {
+        // currentScore += parseInt($(crystal).attr('data-crys'));
+        // })
+       
+        // $(".yourScore").text(`Your Score: ${currentScore}`) 
     //     if (currentScore === targetNum) {
     //     wins++;
     //         resetStats();
