@@ -13,7 +13,7 @@ var crystal = {};
      
     function resetCrystals () {
 		for (var i = 0; i < images.length; i++) {
-            var crystal = $("<img>");
+            crystal = $("<img>");
             crystal.attr("data-crys", Math.floor(Math.random() * 15));
             crystal.attr("src", images[i]);
             crystal.attr("height", "125px");
