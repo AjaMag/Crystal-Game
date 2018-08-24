@@ -18,6 +18,10 @@
    padding: 1em;
 }
 
+.crystal-images {
+    padding-left: 40px;
+}
+
 .targetNum {
     font-size: 40px;
 	background-color: rgba(18, 248, 49, 0.863);
