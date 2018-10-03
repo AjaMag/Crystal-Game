@@ -1,0 +1,59 @@
+.body {
+    display: flex;
+    flex-flow: wrap;
+    font-family: 'Stalinist One', cursive;
+}
+
+.row{
+    display: flex;
+}
+
+.jumbotron {
+    background-color: rgb(174, 0, 255);
+    color: white;
+}
+.card {
+   background-color: rgba(0, 119, 255, 0.932);
+   color: white;
+   padding: 1em;
+}
+
+.crystal-images {
+    padding-left: 40px;
+}
+
+.targetNum {
+    font-size: 40px;
+	background-color: rgba(18, 248, 49, 0.863);
+	border-style: solid;
+    border-color: #ddd;
+    border-width: 1px;
+	padding: 0.25em;
+}
+
+.yourScore {
+    font-size: 40px;
+	background-color: rgba(248, 244, 18, 0.986);
+	border-style: solid;
+    border-color: #ddd;
+    border-width: 1px;
+	padding: 0.25em;
+}
+
+.wins {
+    font-size: 40px;
+	background-color: rgb(248, 110, 18);
+	border-style: solid;
+    border-color: #ddd;
+    border-width: 1px;
+    padding: 0.25em;
+}
+
+.loses {
+    font-size: 40px;
+	background-color: rgba(248, 18, 18, 0.952);
+	border-style: solid;
+    border-color: #ddd;
+    border-width: 1px;
+	padding: 0.25em;
+}
